@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Your Dream Partner</h1>
+    </header>
+
+    <main>
+        <div id="results"></div>
+        <button onclick="window.location.href='index.html'">Go Home</button>
+    </main>
+
+    <script>
+        const resultsContainer = document.getElementById('results');
+        const results = JSON.parse(localStorage.getItem('quizResults'));
+
+        if (results) {
+            resultsContainer.innerHTML = `
+                <p>Gender: ${results.gender}</p>
+                <p>Hair Color: ${results.hairColor}</p>
+                <p>Eye Color: ${results.eyeColor}</p>
+                <p>Personality: ${results.personality}</p>
+            `;
+        } else {
+            resultsContainer.innerHTML = '<p>No results found!</p>';
+        }
+    </script>
+</body>
+</html>
