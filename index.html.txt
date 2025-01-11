@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Partner Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dream Partner Finder</h1>
+        <p>Discover how your future partner might look and feel!</p>
+    </header>
+
+    <main>
+        <button id="startQuiz">Start Quiz</button>
+    </main>
+
+    <footer>
+        <button id="playMusic">Play Music</button>
+    </footer>
+
+    <audio id="bgMusic" loop>
+        <source src="assets/janam_janam.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
